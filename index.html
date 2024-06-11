@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+
+
+<body>
+    <style>
+        .container{
+            background-color: rgb(0, 225, 255);
+            position:absolute;  
+            margin: auto;
+            height: 95%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            
+            
+        }
+        .search{
+            top: 20%;
+            margin: auto;
+            display: flex;
+            padding-top: 5%;
+            /* flex-direction: column; */
+        }
+        
+        .info{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            width: 70%;
+            gap: 10%;
+
+        }
+        .name{
+            margin: auto;
+            width: 100%;
+            background-color: blue;
+            text-align: center;
+        }
+        .time{
+            margin: auto;
+            width: 100%;
+            background-color: rgb(157, 255, 0);
+            text-align: center;
+        }
+        .temp{
+            margin: auto;
+            width: 100%;
+            background-color: rgb(255, 187, 0);
+            text-align: center;
+        }
+
+
+    </style>
+
+    <div class="container">
+
+        <div class ="search">
+            <input id="city-name" type="" text placeholder="Enter City Name">
+            <button id = "search-button">Search</button>
+            
+        </div>
+        <div class="live">
+            <button id = "ll">Get Location</button>
+        </div>
+        
+        <div class="info">
+            <div class="name">
+                Location :-
+                <h1 id = "location">location</h1>
+            </div>
+            <div class="time">
+                Localtime :-
+                <h2 id = "localtime">localtime</h2>
+            </div>
+            <div class="temp">
+                Temperature(C) :-
+                <h3 id = "temperature">temperature </h3>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
